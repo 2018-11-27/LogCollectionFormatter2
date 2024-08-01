@@ -1,7 +1,7 @@
 [<img alt="LOGO" src="https://github.com/favicon.ico" height="21" width="21"/>]()
 [![Release](https://img.shields.io/github/release/2018-11-27/LogCollectionFormatter2.svg?style=flat-square")](https://github.com/2018-11-27/LogCollectionFormatter2/releases/latest)
 [![Python Versions](https://img.shields.io/pypi/pyversions/LogCollectionFormatter2)](https://pypi.org/project/LogCollectionFormatter2)
-[![License](https://img.shields.io/pypi/l/LogCollectionFormatter2)](https://github.com/2018-11-27/LogCollectionFormatter2/blob/master/LICENSE)
+[![License](https://img.shields.io/pypi/l/LogCollectionFormatter2)](https://github.com/2018-11-27/LogCollectionFormatter2/blob/main/LICENSE)
 [![Downloads](https://static.pepy.tech/badge/LogCollectionFormatter2)](https://pepy.tech/project/LogCollectionFormatter2)
 
 # LogCollectionFormatter2

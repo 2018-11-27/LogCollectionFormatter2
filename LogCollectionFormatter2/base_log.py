@@ -201,12 +201,15 @@ class BaseLog:
                      method_code="",
                      log_level='INFO',
                      dialog_type='out',
-                     f_code=""):
+                     f_code="",
+                     t_code=None):
         _, _, _, logger_module = self.get_current_location()
         if len(request_content) > 3000:
             request_content = request_content[:3000]
         if len(response_content) > 3000:
             response_content = response_content[:3000]
+        if t_code is None:
+            t_code = self.t_code
         data = {
             "app_name": str(self.journal_log_name),  # 服务编号
             "level": str(log_level),  # 日志界别
@@ -216,7 +219,7 @@ class BaseLog:
             "dialog_type": str(dialog_type),
             "address": str(request_url),
             "fcode": f_code if dialog_type == 'in' else self.t_code,
-            "tcode": self.t_code if dialog_type == 'in' else f_code,
+            "tcode": t_code if dialog_type == 'in' else f_code,
             "method_code": str(method_code or ""),
             "http_method": str(http_method or ""),
             "request_time": request_time.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3],
