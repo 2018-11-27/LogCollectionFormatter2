@@ -219,7 +219,7 @@ class BaseLog:
             "dialog_type": str(dialog_type),
             "address": str(request_url),
             "fcode": f_code if dialog_type == 'in' else self.t_code,
-            "tcode": t_code if dialog_type == 'in' else f_code,
+            "tcode": f_code if dialog_type == 'in' else t_code,
             "method_code": str(method_code or ""),
             "http_method": str(http_method or ""),
             "request_time": request_time.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3],
