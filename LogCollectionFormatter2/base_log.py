@@ -218,7 +218,7 @@ class BaseLog:
             "transaction_id": str(transaction_id),
             "dialog_type": str(dialog_type),
             "address": str(request_url),
-            "fcode": f_code if dialog_type == 'in' else self.t_code,
+            "fcode": self.t_code if dialog_type == 'in' else f_code,
             "tcode": f_code if dialog_type == 'in' else t_code,
             "method_code": str(method_code or ""),
             "http_method": str(http_method or ""),
