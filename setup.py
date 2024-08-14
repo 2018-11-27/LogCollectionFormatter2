@@ -7,7 +7,7 @@ if sys.version_info.major >= 3:
 
 setuptools.setup(
     name='LogCollectionFormatter2',
-    version='2.0.1',
+    version='2.0.2',
     author='Unnamed great master',
     author_email='<gqylpy@outlook.com>',
     license='BSD 3-Clause',

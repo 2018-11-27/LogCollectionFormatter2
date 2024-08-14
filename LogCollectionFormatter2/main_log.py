@@ -64,7 +64,7 @@ def get_headers_data(header_item):
 
 class MainLog(BaseLog):
 
-    def __init__(self, app_name, prefix_path, t_code, f_code="", when="D", backup_count=3,
+    def __init__(self, app_name, prefix_path, t_code="", f_code="", when="D", backup_count=3,
                  journal_log_enable=True, journal_mq_enable=True, host="", port=5673, virtual_host="",
                  heartbeat_interval=30, name="", password="", confirm=False, is_gevet=True,
                  mq_exchange_name='x.journal'):
